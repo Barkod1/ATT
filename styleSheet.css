@@ -50,3 +50,8 @@ table.double input{
         justify-content:space-between;
     }
 } 
+.code{
+    display:flex;
+    justify-content:center;
+    margin-bottom: 20px;
+}
