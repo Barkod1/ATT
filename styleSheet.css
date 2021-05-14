@@ -21,7 +21,8 @@ input:hover{
     display:flex;
     flex-direction:row; 
     justify-content: center;
-    
+    align-content: space-between;
+    flex-wrap: wrap;
     
 }
 table{
@@ -44,14 +45,66 @@ table.double input{
         display:flex;
         flex-direction:column;
         align-items:center;
+        align-content: stretch;
+        flex-wrap: wrap;
     }
     .first_two,.last_two{
         display:flex;
         justify-content:space-between;
+    }
+
+    #data-arr{
+        display:flex;
+        flex-direction: column;
     }
 } 
 .code{
     display:flex;
     justify-content:center;
     margin-bottom: 20px;
+}
+.lastlast-two{
+    display:flex;
+    flex-flow: start;
+    align-content: flex-start;
+}
+#plusminus{
+    display:flex;
+    width: 100%;
+    justify-content:center;
+    margin: 30px 0;
+}
+.plusbtn{
+    border-radius: 10% 0 0 10%;
+}
+.minusbtn{
+    border-radius: 0 10% 10% 0;
+}
+.plusbtn , .minusbtn{
+    width:10%;
+    height: 50px;
+    background-color:#d3f3f1;
+    transition: all 0.2s;
+}
+body{
+    background-color: #c5f9d7;}
+
+th,.header{
+    background-color: #f7d486;
+}
+#header{
+    color: #444444;
+    background: #FFFFFF;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;    color:#103783;
+}
+input,td{
+    border-radius: 0;
+}
+p{
+    color: cadetblue;
+    float: left;
+    font-size: x-small;
+}
+.plusbtn:hover , .minusbtn:hover{
+    background-color: #9bafd9;
 }
