@@ -40,7 +40,7 @@ table.double input{
     display: flex;
     justify-content: center;
 }
-@media  (max-width:560px){
+@media  (max-width:700px){
     .content{
         display:flex;
         flex-direction:column;
@@ -54,8 +54,7 @@ table.double input{
     }
 
     #data-arr{
-        display:flex;
-        flex-direction: column;
+        display:none;
     }
 } 
 .code{
@@ -73,15 +72,18 @@ table.double input{
     width: 100%;
     justify-content:center;
     margin: 30px 0;
+    position: sticky;
 }
 .plusbtn{
-    border-radius: 10% 0 0 10%;
+    border-radius: 50% 0 0 50%;
+    
 }
 .minusbtn{
-    border-radius: 0 10% 10% 0;
+    border-radius: 0 50% 50% 0;
+    
 }
 .plusbtn , .minusbtn{
-    width:10%;
+    width:50px;
     height: 50px;
     background-color:#d3f3f1;
     transition: all 0.2s;

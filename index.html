@@ -7,19 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styleSheet.css">
-    <title>Document</title>
+    <title>ATT</title>
 </head>
 
 <body>
-    <h1 id="header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cpu"
-            viewBox="0 0 16 16">
-            <path
-                d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
-        </svg> Assembly Tracking Table <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-            fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
-            <path
-                d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
-        </svg></h1>
+    <h1 id="header">
+        Assembly Tracking Table </h1>
     <div class="code">
         <textarea name="code" id="code" cols="100" rows="15">;enter your code here</textarea>
     </div>
@@ -51,48 +44,47 @@
                 </thead>
                 <tbody>
 
-                    <!-- tr*10>(td>input[name="al-$" maxlength="2"])+td>input[name="ah-$" maxlength="2"] -->
+                    <!-- tr*10>(td>input[name="al-$" maxlength="2"])*2 -->
                     <tr>
-                        <td><input type="text" name="al-1"></td>
-                        <td><input type="text" name="ah-1"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="al-2"></td>
-                        <td><input type="text" name="ah-2"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="al-3"></td>
-                        <td><input type="text" name="ah-3"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="al-4"></td>
-                        <td><input type="text" name="ah-4"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="al-5"></td>
-                        <td><input type="text" name="ah-5"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="al-6"></td>
-                        <td><input type="text" name="ah-6"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="al-7"></td>
-                        <td><input type="text" name="ah-7"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="al-8"></td>
-                        <td><input type="text" name="ah-8"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="al-9"></td>
-                        <td><input type="text" name="ah-9"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
-                    <tr class="last">
-                        <td><input type="text" name="al-10"></td>
-                        <td><input type="text" name="ah-10"></td>
+                    <tr>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
-
+                    <tr>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
+                    </tr>
 
                 </tbody>
 
@@ -110,44 +102,44 @@
                 <tbody>
 
                     <tr>
-                        <td><input type="text" name="bl-1"></td>
-                        <td><input type="text" name="bh-1"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="bl-2"></td>
-                        <td><input type="text" name="bh-2"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="bl-3"></td>
-                        <td><input type="text" name="bh-3"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="bl-4"></td>
-                        <td><input type="text" name="bh-4"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="bl-5"></td>
-                        <td><input type="text" name="bh-5"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="bl-6"></td>
-                        <td><input type="text" name="bh-6"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="bl-7"></td>
-                        <td><input type="text" name="bh-7"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="bl-8"></td>
-                        <td><input type="text" name="bh-8"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="bl-9"></td>
-                        <td><input type="text" name="bh-9"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
-                    <tr class="last">
-                        <td><input type="text" name="bl-10"></td>
-                        <td><input type="text" name="bh-10"></td>
+                    <tr>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
 
                 </tbody>
@@ -168,45 +160,46 @@
                 <tbody>
 
                     <tr>
-                        <td><input type="text" name="cl-1"></td>
-                        <td><input type="text" name="ch-1"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="cl-2"></td>
-                        <td><input type="text" name="ch-2"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="cl-3"></td>
-                        <td><input type="text" name="ch-3"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="cl-4"></td>
-                        <td><input type="text" name="ch-4"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="cl-5"></td>
-                        <td><input type="text" name="ch-5"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="cl-6"></td>
-                        <td><input type="text" name="ch-6"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="cl-7"></td>
-                        <td><input type="text" name="ch-7"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="cl-8"></td>
-                        <td><input type="text" name="ch-8"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="cl-9"></td>
-                        <td><input type="text" name="ch-9"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
-                    <tr class="last">
-                        <td><input type="text" name="cl-10"></td>
-                        <td><input type="text" name="ch-10"></td>
+                    <tr>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
+
 
                 </tbody>
             </table>
@@ -225,46 +218,45 @@
 
 
                     <tr>
-                        <td><input type="text" name="dl-1"></td>
-                        <td><input type="text" name="dh-1"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="dl-2"></td>
-                        <td><input type="text" name="dh-2"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="dl-3"></td>
-                        <td><input type="text" name="dh-3"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="dl-4"></td>
-                        <td><input type="text" name="dh-4"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="dl-5"></td>
-                        <td><input type="text" name="dh-5"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="dl-6"></td>
-                        <td><input type="text" name="dh-6"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="dl-7"></td>
-                        <td><input type="text" name="dh-7"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="dl-8"></td>
-                        <td><input type="text" name="dh-8"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
                     <tr>
-                        <td><input type="text" name="dl-9"></td>
-                        <td><input type="text" name="dh-9"></td>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
-                    <tr class="last">
-                        <td><input type="text" name="dl-10"></td>
-                        <td><input type="text" name="dh-10"></td>
+                    <tr>
+                        <td><input type="text" maxlength="3"></td>
+                        <td><input type="text" maxlength="3"></td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
@@ -282,9 +274,7 @@
                 </thead>
                 <tbody>
                     <!-- tr*10>td>input[name="si$" maxlength="4"] -->
-                    <tr>
-                        <td><input type="text" name="si0"></td>
-                    </tr>
+
                     <tr>
                         <td><input type="text" name="si1"></td>
                     </tr>
@@ -324,12 +314,11 @@
                 <thead>
                     <tr>
                         <th colspan="1">DI</th>
+
                     </tr>
+
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><input type="text" name="di0"></td>
-                    </tr>
                     <tr>
                         <td><input type="text" name="di1"></td>
                     </tr>
